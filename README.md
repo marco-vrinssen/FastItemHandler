@@ -22,24 +22,6 @@ A lightweight World of Warcraft addon that streamlines item handling across loot
 ### 🚀 Quick Auctioning
 - **Spacebar Posting**: Press Space to quickly post auctions while in the sell tab
 
-## Installation
-
-1. Download the addon
-2. Extract to `World of Warcraft/_retail_/Interface/AddOns/`
-3. Restart WoW or `/reload`
-
-## File Structure
-
-```
-FastItemHandler/
-├── FastItemHandler.toc
-├── Looting.lua    # Fast auto-looting
-├── Vendor.lua     # Sell & repair automation
-├── Favorites.lua  # Favorites sync for AH & crafting orders
-├── Auctioning.lua # Spacebar posting
-└── README.md
-```
-
 ## License
 
 MIT License
