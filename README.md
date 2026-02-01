@@ -1,8 +1,13 @@
-# FastExchange
+# FastItemHandler
 
-A lightweight World of Warcraft addon that streamlines vendor and auction house interactions.
+A lightweight World of Warcraft addon that streamlines item handling across looting, vendors, and auction house.
 
 ## Features
+
+### ⚡ Fast Looting
+- **Instant Auto-Loot**: Rapid item collection with optimized tick-based looting
+- **Bag Space Check**: Validates bag space before looting to prevent errors
+- **Quest Item Priority**: Quest items are always looted first
 
 ### 🛒 Vendor Automation
 - **Auto-Sell Junk**: Automatically sells all gray items when opening a vendor
@@ -14,7 +19,7 @@ A lightweight World of Warcraft addon that streamlines vendor and auction house 
 - **Crafting Orders**: Also applies to the Professions Customer Orders UI
 - **Current Expansion Filter**: Defaults auction search to current expansion items
 
-### ⚡ Quick Auctioning
+### 🚀 Quick Auctioning
 - **Spacebar Posting**: Press Space to quickly post auctions while in the sell tab
 
 ## Installation
@@ -26,11 +31,12 @@ A lightweight World of Warcraft addon that streamlines vendor and auction house 
 ## File Structure
 
 ```
-FastExchange/
-├── FastExchange.toc
-├── vendor.lua      # Sell & repair automation
-├── favorites.lua   # Favorites sync for AH & crafting orders
-├── auctioning.lua  # Spacebar posting
+FastItemHandler/
+├── FastItemHandler.toc
+├── Looting.lua    # Fast auto-looting
+├── Vendor.lua     # Sell & repair automation
+├── Favorites.lua  # Favorites sync for AH & crafting orders
+├── Auctioning.lua # Spacebar posting
 └── README.md
 ```
 

@@ -63,13 +63,13 @@ f:RegisterEvent("AUCTION_HOUSE_CLOSED")
 f:SetScript("OnEvent", function(_, e, ...)
     if e == "ADDON_LOADED" then
         local addon = ...
-        if addon == "FastExchange" then
+        if addon == "FastItemHandler" then
             f:UnregisterEvent("ADDON_LOADED")
-            FastExchangeDB = FastExchangeDB or {}
-            accountDB = FastExchangeDB
+            FastItemHandlerDB = FastItemHandlerDB or {}
+            accountDB = FastItemHandlerDB
             accountDB.favorites = accountDB.favorites or {}
-            FastExchangeCharDB = FastExchangeCharDB or {}
-            charDB = FastExchangeCharDB
+            FastItemHandlerCharDB = FastItemHandlerCharDB or {}
+            charDB = FastItemHandlerCharDB
             charDB.favorites = charDB.favorites or {}
             if not charDB.sync then
                 f:RegisterEvent("AUCTION_HOUSE_BROWSE_RESULTS_UPDATED")

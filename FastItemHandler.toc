@@ -1,0 +1,12 @@
+## Interface: 110200
+## Title: FastItemHandler
+## Notes: Fast looting, auto sell/repair, auction favorites sync, and quick posting
+## Author: MIYANKO
+## Version: 1.0.0
+## SavedVariables: FastItemHandlerDB
+## SavedVariablesPerCharacter: FastItemHandlerCharDB
+
+Looting.lua
+Vendor.lua
+Favorites.lua
+Auctioning.lua
