@@ -1,0 +1,7 @@
+package-as: ItemJuggler
+
+enable-nolib-creation: no
+
+ignore:
+  - README.md
+  - .gitignore

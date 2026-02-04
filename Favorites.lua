@@ -27,7 +27,7 @@ local function getItemLink(k)
 end
 
 local function notify(prefix, k)
-    local msg = "[FastExchange]: " .. prefix .. getItemLink(k)
+    local msg = "[Item Juggler]: " .. prefix .. getItemLink(k)
     if DEFAULT_CHAT_FRAME then DEFAULT_CHAT_FRAME:AddMessage(msg) else print(msg) end
 end
 
@@ -63,13 +63,13 @@ f:RegisterEvent("AUCTION_HOUSE_CLOSED")
 f:SetScript("OnEvent", function(_, e, ...)
     if e == "ADDON_LOADED" then
         local addon = ...
-        if addon == "FastItemHandler" then
+        if addon == "ItemJuggler" then
             f:UnregisterEvent("ADDON_LOADED")
-            FastItemHandlerDB = FastItemHandlerDB or {}
-            accountDB = FastItemHandlerDB
+            ItemJugglerDB = ItemJugglerDB or {}
+            accountDB = ItemJugglerDB
             accountDB.favorites = accountDB.favorites or {}
-            FastItemHandlerCharDB = FastItemHandlerCharDB or {}
-            charDB = FastItemHandlerCharDB
+            ItemJugglerCharDB = ItemJugglerCharDB or {}
+            charDB = ItemJugglerCharDB
             charDB.favorites = charDB.favorites or {}
             if not charDB.sync then
                 f:RegisterEvent("AUCTION_HOUSE_BROWSE_RESULTS_UPDATED")

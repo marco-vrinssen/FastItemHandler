@@ -1,10 +1,11 @@
-## Interface: 110200
-## Title: FastItemHandler
+## Interface: 120000
+## Title: Item Juggler
 ## Notes: Fast looting, auto sell/repair, auction favorites sync, and quick posting
 ## Author: MIYANKO
 ## Version: 1.0.0
-## SavedVariables: FastItemHandlerDB
-## SavedVariablesPerCharacter: FastItemHandlerCharDB
+## SavedVariables: ItemJugglerDB
+## SavedVariablesPerCharacter: ItemJugglerCharDB
+## X-Curse-Project-ID: 1454032
 
 Looting.lua
 Vendor.lua
